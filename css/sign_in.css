@@ -1,0 +1,124 @@
+body {
+    background-color: #1B74AE;
+    text-transform: capitalize;
+    font-family: 'Cairo', sans-serif;
+    padding: 100px;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    padding: 80px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 2px 5px 20px -4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+/* Start Left Section */
+.left {
+    width: 50%;
+    text-align: center;
+}
+.left .text {
+    position: relative;
+}
+.left .text::before { 
+    content: '';
+    position: absolute;
+    background-color: #337CE5;
+    border-radius: 50%;
+    width: 1000px;
+    height: 1000px;
+    top: -380px;
+    left: -480px;
+    z-index: -1;
+}
+
+.left .text h1 {
+    font-size: 45px;
+    color: #FFFFFF;
+    font-weight: normal;
+    position: relative;
+}
+.left .text p {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.left .img {
+    width: 100%;
+    height: 100%;
+}
+.left .img img {
+    width: 100%;
+    height: 100%;
+}
+/* End Left Section */
+
+/* Start Right Section */
+.right {
+    width: 34%;
+    margin-right: 80px;
+    text-align: center;
+    position: relative;
+}
+.right h1 {
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+.right .a {
+    position: absolute;
+    top: 182px;
+    left: 16px;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.right .b {
+    position: absolute;
+    top: 265px;
+    left: 16px;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.right input {
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #EDEDED;
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+    font-size: 20px;
+}
+.right button {
+    background-color: white;
+    outline: none;
+    border: 2px solid #337CE5;
+    color: #337CE5;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.right button:hover {
+    background-color: #337CE5;
+    color: white;
+}
+.right .text {
+    margin-top: 30px;
+}
+.right .text p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.right .text i {
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
